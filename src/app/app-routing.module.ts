@@ -4,7 +4,8 @@ import { AppComponent }         from './app.component';
 
 const routes:Routes = [
   { path:'', component:AppComponent, children: [
-          { path:'', loadChildren:() => import('./public/public.module').then(m => m.PublicModule) }
+          { path:        '', loadChildren:() => import('./public/public.module').then(m => m.PublicModule) },
+          { path:'intranet', loadChildren:() => import('./intranet/intranet.module').then(m => m.IntranetModule) }
       ] 
   }
 ];

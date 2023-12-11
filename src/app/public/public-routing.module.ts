@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule }             from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PublicComponent } from './public.component';
-import { LoginComponent } from './auth/login/containers/login/login.component';
+import { PublicComponent }      from './public.component';
+import { LoginComponent }       from './auth/login/containers/login/login.component';
 
 const routes:Routes = [
     { path:'', component:PublicComponent, children: [
