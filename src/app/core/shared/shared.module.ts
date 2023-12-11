@@ -1,6 +1,7 @@
 import { NgModule }                         from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule }                     from '@angular/router';
+import { LoginBoxComponent }                from './components/login-box/login-box.component';
 
 @NgModule({
     imports: [
@@ -8,8 +9,9 @@ import { RouterModule }                     from '@angular/router';
         ReactiveFormsModule,
         RouterModule
     ],
-    declarations: [],
+    declarations: [LoginBoxComponent],
     exports: [
+        LoginBoxComponent,
         FormsModule,
         ReactiveFormsModule,
         RouterModule
