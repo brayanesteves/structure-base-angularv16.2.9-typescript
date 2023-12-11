@@ -17,6 +17,6 @@ import { LoginComponent } from './auth/login/containers/login/login.component';
     providers:[]
 })
 
-export class PublicModuleModule {
+export class PublicModule {
     constructor() {  }
 }
